@@ -1,0 +1,5 @@
+/**
+ * useUser
+ */
+
+export function useUser() {}
