@@ -13,7 +13,7 @@ export default function ArticleList({ articles }: Props) {
     return <p>記事がありません。</p>;
   }
   return (
-    <ul>
+    <ul className='mt-8 grid grid-cols-1 gap-10 lg:grid-cols-3'>
       {articles.map((article) => (
         <ArticleListItem
           key={article.id}

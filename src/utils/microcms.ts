@@ -17,10 +17,13 @@ export type Tag = {
 export type Works = {
   title: string;
   content: string;
+  credit: string;
+  description: string;
+  screenshot?: MicroCMSImage;
+  tags?: Tag[];
   thumbnail?: MicroCMSImage;
-  // description: string;
-  // tags?: Tag[];
   url: string;
+  year: string;
 };
 
 export type Article = Works & MicroCMSContentId & MicroCMSDate;
@@ -58,7 +61,6 @@ export const getDetail = async (contentId: string, queries?: MicroCMSQueries) =>
       queries,
     })
     .catch(notFound);
-
   return detailData;
 };
 

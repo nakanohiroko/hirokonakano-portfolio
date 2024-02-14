@@ -1,5 +1,0 @@
-/**
- * useUser
- */
-
-export function useUser() {}

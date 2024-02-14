@@ -18,61 +18,27 @@ export default function Footer() {
   return (
     <>
       <footer
-        className={`${mulish.className} g-white lg:grid lg:grid-cols-2`}
+        className={`${mulish.className} lg:grid lg:grid-cols-2`}
         id='contact'
       >
-        <div className='px-4 py-16 sm:px-6 lg:col-span-2 lg:px-8'>
+        <div className='px-6 py-8 lg:col-span-2 lg:px-16'>
           <div className='grid grid-cols-1 gap-8 sm:grid-cols-2'>
             <div>
               <p>
                 <span className='text-xs uppercase tracking-wider text-gray-500'>Contact me</span>
 
                 <a
-                  href='mailto:hirokonakano@gmail.com'
+                  href='mailto:hello@corleonis.net'
                   className='block text-xl font-medium text-gray-900 underline-offset-4 hover:underline hover:opacity-75 sm:text-2xl'
                 >
-                  hirokonakano@gmail.com
+                  hello@corleonis.net
                 </a>
               </p>
             </div>
 
-            <div className='grid grid-cols-1 gap-4 sm:grid-cols-2'>
+            <div className='gap-4'>
               <div>
-                <p>
-                  <span className='text-xs uppercase tracking-wider text-gray-500'>
-                    Let&apos;s connect
-                  </span>
-                </p>
-
-                <ul className='mt-1 flex gap-6'>
-                  <li>
-                    <a
-                      href='https://www.facebook.com/hiroko.nakano.96'
-                      rel='noreferrer'
-                      target='_blank'
-                      className='text-gray-700 transition hover:opacity-75'
-                      data-te-toggle='tooltip'
-                      data-te-placement='top'
-                      title='Facebook'
-                    >
-                      <span className='sr-only'>Facebook</span>
-
-                      <svg
-                        xmlns='http://www.w3.org/2000/svg'
-                        viewBox='0 0 24 24'
-                        width='24'
-                        height='24'
-                        fill='none'
-                        stroke='currentColor'
-                        strokeLinecap='round'
-                        strokeLinejoin='round'
-                        strokeWidth='2'
-                      >
-                        <path d='M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z' />
-                      </svg>
-                    </a>
-                  </li>
-
+                <ul className='mt-1 flex gap-6 md:flex-row-reverse'>
                   <li>
                     <a
                       href='https://github.com/nakanohiroko'
@@ -144,15 +110,14 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className='mt-12 border-t border-gray-100 pt-12'>
+          <div className='mt-12 border-t border-gray-100 pt-8'>
             <div className='sm:flex sm:items-center sm:justify-between'>
-              <p className='mt-8 text-xs tracking-wider text-gray-500 sm:mt-0'>
-                &copy; 2024. hiroko nakano
-              </p>
+              <p className='mt-8 text-xl sm:mt-0'>&copy; 2024 hiroko nakano</p>
             </div>
           </div>
         </div>
       </footer>
+      {/*
       <button
         className='fixed bottom-10 right-10 flex items-center justify-center rounded-full p-2 transition duration-200 hover:opacity-30 focus:outline-none'
         title='Back to Top'
@@ -172,6 +137,7 @@ export default function Footer() {
           />
         </svg>
       </button>
+      */}
     </>
   );
 }

@@ -4,8 +4,6 @@
 
 import { NextPage, NextPageContext } from 'next';
 
-import Meta from '../components/templates/_Base/Meta/Meta';
-
 interface ErrorProps {
   statusCode?: number;
 }
@@ -13,10 +11,9 @@ interface ErrorProps {
 const ErrorPage: NextPage<ErrorProps> = ({ statusCode }) => {
   return (
     <>
-      <Meta pageTitle={`${statusCode} Error`} />
-      <div>
+      <main className='mb-20 px-6 pt-28 text-center lg:px-16'>
         <h1>{`${statusCode} Error`}</h1>
-      </div>
+      </main>
     </>
   );
 };

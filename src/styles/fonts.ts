@@ -1,4 +1,4 @@
-import { Abril_Fatface, Mulish, Noto_Sans_JP } from 'next/font/google';
+import { Abril_Fatface, Inter, Mulish, Noto_Sans_JP } from 'next/font/google';
 
 const abrilfatface = Abril_Fatface({
   display: 'swap',
@@ -11,7 +11,7 @@ const mulish = Mulish({
   display: 'swap',
   subsets: ['latin'],
   variable: '--font-mulish',
-  weight: ['400', '600'],
+  weight: ['500', '600'],
 });
 
 const notojp = Noto_Sans_JP({
@@ -21,4 +21,11 @@ const notojp = Noto_Sans_JP({
   weight: ['400', '500'],
 });
 
-export { abrilfatface, mulish, notojp };
+const inter = Inter({
+  display: 'swap',
+  subsets: ['latin'],
+  variable: '--font-inter',
+  weight: ['400', '600'],
+});
+
+export { abrilfatface, inter, mulish, notojp };

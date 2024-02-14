@@ -51,7 +51,7 @@ body {
 }
 
 :root {
-  --bg-color1: #03ffc5;
-  --bg-color2: #03ffc5;
+  --highlight-color: #03ffc5;
   --link-hover-color: #fff;
+  --border-radius: 12px;
 }

@@ -1,7 +1,6 @@
 import Link from 'next/link';
 
 import { Tag } from '../../../utils/microcms';
-import styles from './index.module.css';
 
 type Props = {
   hasLink?: boolean;
@@ -13,11 +12,15 @@ export default function TagListItem({ hasLink = true, tag }: Props) {
     return (
       <Link
         href={`/tags/${tag.id}`}
-        className={styles.tag}
+        className={'whitespace-nowrap rounded-xl bg-[#03FFC5] px-3 py-1 text-sm'}
       >
-        #{tag.name}
+        {tag.name}
       </Link>
     );
   }
-  return <span className={styles.tag}>#{tag.name}</span>;
+  return (
+    <span className={'whitespace-nowrap rounded-xl bg-[#03FFC5] px-3 py-1 text-sm'}>
+      {tag.name}
+    </span>
+  );
 }
