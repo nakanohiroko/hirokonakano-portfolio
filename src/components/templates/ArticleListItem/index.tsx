@@ -38,7 +38,6 @@ export default function ArticleListItem({ article }: Props) {
           </picture>
         ) : (
           <Image
-            className={styles.image}
             src='/no-image.png'
             alt='No Image'
             width={1200}

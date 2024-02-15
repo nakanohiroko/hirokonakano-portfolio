@@ -1,6 +1,5 @@
-import { type Article } from '@/utils/microcms';
-import { formatRichText } from '@/utils/util';
-
+import { type Article } from '../../../utils/microcms';
+import { formatRichText } from '../../../utils/util';
 import LinkBtn from '../../elements/btn/LinkBtn';
 import TagList from '../TagList';
 import styles from './index.module.css';

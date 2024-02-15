@@ -5,10 +5,9 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
-import ArticleList from '@/components/templates/ArticleList';
-
 import CheckIcon from '../../public/check.svg';
 import LinkBtn from '../components/elements/btn/LinkBtn';
+import ArticleList from '../components/templates/ArticleList';
 import { mulish } from '../styles/fonts';
 import { getList } from '../utils/microcms';
 

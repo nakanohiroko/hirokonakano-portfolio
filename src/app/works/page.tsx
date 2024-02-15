@@ -2,8 +2,7 @@
  * worksページ
  */
 
-import ArticleList from '@/components/templates/ArticleList';
-
+import ArticleList from '../../components/templates/ArticleList';
 import { getList } from '../../utils/microcms';
 
 export const metadata = {
