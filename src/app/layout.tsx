@@ -18,6 +18,14 @@ export const metadata = {
     description: '中野紘子のポートフォリオサイトです',
     images: '/placeholder-social.jpg',
   },
+  robots: {
+    follow: false,
+    googleBot: {
+      follow: false,
+      index: false,
+    },
+    index: false,
+  },
 };
 
 interface Props {
