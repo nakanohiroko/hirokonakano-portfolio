@@ -11,6 +11,7 @@ import ArticleList from '../components/templates/ArticleList';
 import { mulish } from '../styles/fonts';
 import { getList } from '../utils/microcms';
 
+// eslint-disable-next-line @next/next/no-async-client-component
 export default async function Page() {
   const data = await getList({
     limit: 3,
@@ -18,7 +19,11 @@ export default async function Page() {
   return (
     <>
       <main className='px-6 pt-14 lg:px-16'>
-        <section className='mb-16 flex'>
+        {/* Main Section */}
+        <section
+          id='main'
+          className='mb-16 flex'
+        >
           <div>
             <motion.div
               initial={{
@@ -61,9 +66,7 @@ export default async function Page() {
                 ease: 'easeOut',
               }}
             >
-              <p
-                className={`${mulish.className} animate-slide-in-bottom mb-10 text-xl leading-snug lg:text-2xl`}
-              >
+              <p className={`${mulish.className} mb-10 text-xl leading-snug lg:text-2xl`}>
                 I&apos;ve been working as a Front-end web developer for 15 years.
                 <br />
                 Now, based in Yatsugatake.
@@ -90,7 +93,9 @@ export default async function Page() {
             </motion.div>
           </div>
         </section>
-        {/* About Section */}
+        {/* End of Main Section */}
+
+        {/* Works Section */}
         <section
           id='works'
           className='py-6 lg:py-10'
@@ -98,12 +103,14 @@ export default async function Page() {
           <h2 className='mb-10 text-4xl font-bold lg:text-5xl'>my works</h2>
           <ArticleList articles={data.contents} />
         </section>
+        {/* End of Works Section */}
 
+        {/* About Section */}
         <section id='about'>
-          <div className='mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-11'>
-            <div className='grid grid-cols-1 lg:h-screen lg:grid-cols-2'>
-              <div className='relative z-10 lg:py-16'>
-                <div className='relative h-64 sm:h-80 lg:h-full'>
+          <div className='mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 xl:px-11'>
+            <div className='grid grid-cols-1 xl:h-screen xl:grid-cols-2'>
+              <div className='relative z-10 xl:py-16'>
+                <div className='relative h-64 sm:h-80 xl:h-full'>
                   <img
                     alt='my picture'
                     src='/img_aboutme.jpg'
@@ -113,39 +120,65 @@ export default async function Page() {
               </div>
 
               <div className='relative flex items-center'>
-                <div className='p-8 sm:p-16 lg:p-24'>
+                <div className='p-8 sm:p-16 xl:p-24'>
                   <h2 className='mb-10 text-4xl font-bold lg:text-5xl'>About me</h2>
 
                   <p className='mt-4'>
-                    中野紘子は山梨を拠点にしたフロントエンドエンジニアです。群馬県で生まれ、京都にて様々な企画、開発の経験を積んだ後、2022年に山梨へと拠点を移しました。
+                    2008年に京都の制作会社FLAKWORKS
+                    inc.へフロントエンドエンジニアとして加入し、デジタル教材開発やWebサイト制作に携わっています。
                   </p>
                   <p className='mt-4'>
-                    Flashサイトの制作からキャリアをスタートし、デジタル教材開発、TV番組と連動したアプリケーション開発、Webサイト制作に携わっています。
+                    友人たちとプロジェクト（
+                    <a
+                      href='https://your-unknown-music.com/'
+                      target='_blank'
+                      className='underline hover:no-underline'
+                    >
+                      音楽ポータルサイト
+                    </a>
+                    の運営やカルチャーイベントの開催など）を立ち上げたり、思いついたアイディアを形にしてウェブサイトをつくったり（インタビュー記事だけを集めたブックマークサイト
+                    <a
+                      href='https://hatenanews.com/articles/201202/7569'
+                      target='_blank'
+                      className='underline hover:no-underline'
+                    >
+                      “GOOD INTERVIEW BOOKMARK”
+                    </a>
+                    , 瀬戸内芸術祭にて制作したストーリーマッピング・サービス“MILE-POST
+                    PROJECT”等）、仕事だけでなくプライベートでも様々な活動に参加しています。
                   </p>
                   <p className='mt-4'>
-                    常に新しい技術やベストプラクティスに興味を持ち、自己成長と業務効率の向上に努めています。
+                    コロナ禍を経て2022年に山梨・八ヶ岳山麓へ拠点を移してからは、ワークライフバランスが取れ、日々の暮らしをより楽しむことができるようになりました。
                   </p>
-                  <p className='mt-4'>趣味は読書とゲーム、真面目で健康なことが取り柄です。</p>
+                  <p className='mt-4'>
+                    趣味はゲームと散歩、取り柄は真面目で健康なこと。よく褒められるのはレスポンスの速さです。日々のことは
+                    <a
+                      href='https://daily.corleonis.net/'
+                      target='_blank'
+                      className='underline hover:no-underline'
+                    >
+                      こちら
+                    </a>
+                    。
+                  </p>
                   <hr className='mt-10' />
                   <p className='mt-10'>
-                    Hiroko Nakano is a front-end web developer based in Yamanashi. Born in Gunma
-                    Prefecture, I gained experience in various planning and development projects in
-                    Kyoto before moving to Yamanashi in 2022.
+                    In 2008, I joined FLAKWORKS inc. as a front-end web developer and gained
+                    experience in the development of digital educational materials and website.
                   </p>
 
                   <p className='mt-4'>
-                    I started my career by creating Flash websites, and have since been involved in
-                    the development of digital educational materials, applications linked to TV
-                    programs, and website development.
+                    I have launched some projects with my friends, created websites based on ideas
+                    that came to us. I have participated in various activities besides working.
                   </p>
 
                   <p className='mt-4'>
-                    Always interested in new technologies and best practices, I strive for personal
-                    growth and improved work efficiency.
+                    Since moving to Yatsugatake in 2022, I have found a better work-life balance and
+                    am enjoying my daily life more.
                   </p>
 
                   <p className='mt-4'>
-                    My hobbies are reading and playing games, and my strengths are hardworking and
+                    My hobbies are playing games and taking walks. I&apos;m hard-working and
                     healthy!
                   </p>
                 </div>
@@ -258,7 +291,15 @@ export default async function Page() {
                         className='size-4 fill-current'
                       />
                       <h4 className='font-bold'>
-                        NHK eテレ ビットワールド 番組連動アプリケーション開発
+                        NHK eテレ{' '}
+                        <a
+                          href='https://www.nhk.or.jp/bitworld/index.html'
+                          target='_blank'
+                          className='underline hover:no-underline'
+                        >
+                          ビットワールド
+                        </a>{' '}
+                        番組連動アプリケーション開発
                       </h4>
                     </div>
                     <p className='ml-7 '>
