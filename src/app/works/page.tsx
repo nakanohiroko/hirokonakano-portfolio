@@ -6,14 +6,14 @@ import ArticleList from '../../components/templates/ArticleList';
 import { getList } from '../../utils/microcms';
 
 export const metadata = {
-  title: 'my works',
+  title: 'My works',
   alternates: {
     canonical: '/works',
   },
   description: '制作実績です',
   metadataBase: new URL(process.env.BASE_URL + '/works' || 'http://localhost:3000/works'),
   openGraph: {
-    title: 'my works',
+    title: 'My works',
     description: '制作実績です',
     images: '/placeholder-social.jpg',
   },
@@ -30,7 +30,7 @@ export default async function Page() {
           id='works'
           className='p-6 lg:p-10'
         >
-          <h2 className='mb-16 text-4xl font-bold lg:text-5xl'>my works</h2>
+          <h2 className='mb-16 text-4xl font-bold lg:text-5xl'>My works</h2>
           <ArticleList articles={data.contents} />
         </section>
       </main>

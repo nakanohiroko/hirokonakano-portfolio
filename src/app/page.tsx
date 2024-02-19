@@ -86,7 +86,7 @@ export default async function Page() {
               }}
             >
               <LinkBtn
-                name='my works'
+                name='My works'
                 href='/works'
                 target='_self'
               ></LinkBtn>
@@ -100,7 +100,7 @@ export default async function Page() {
           id='works'
           className='py-6 lg:py-10'
         >
-          <h2 className='mb-10 text-4xl font-bold lg:text-5xl'>my works</h2>
+          <h2 className='mb-10 text-4xl font-bold lg:text-5xl'>My works</h2>
           <ArticleList articles={data.contents} />
         </section>
         {/* End of Works Section */}
@@ -209,7 +209,7 @@ export default async function Page() {
                       <h4 className='font-bold'>（株）教育同人社、教材リンクサイト実装</h4>
                     </div>
                     <p className='ml-7 '>
-                      紙教材に印刷された二次元コードを読み取ると、解答と関連コンテンツへのリンクが表示されるサイトを実装（AWS
+                      紙教材に印刷された二次元コードを読み取ると、解答と関連コンテンツへのリンクが表示される教材リンクサイトを実装（AWS
                       EC2 + microCMS + Next.js + React + CSS Modules）
                     </p>
                   </li>
@@ -275,7 +275,7 @@ export default async function Page() {
                     <p className='ml-7'>
                       毎年いくつかの音楽フェスのサイト実装を担当
                       <br />
-                      その他、アーティストの公式サイトや特設サイトなども複数実装担当
+                      その他、アーティストの公式サイトや特設サイトなども複数実装を担当
                     </p>
                   </li>
                 </ul>
@@ -319,7 +319,7 @@ export default async function Page() {
                         alt={''}
                         className='size-4 fill-current'
                       />
-                      <h4 className='font-bold'>デジタル教材制作に携わり始める</h4>
+                      <h4 className='font-bold'>デジタル教材制作/開発に携わり始める</h4>
                     </div>
                     <p className='ml-7 '>
                       2010年当時はFlash製アプリで、教科書紙面の閲覧、音声や動画の再生機能などを搭載

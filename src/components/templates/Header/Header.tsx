@@ -60,7 +60,7 @@ export default function Header() {
                         href='/works'
                         className='relative z-10 inline-block px-1 text-lg transition duration-200 hover:opacity-30'
                       >
-                        my works
+                        My works
                       </a>
                     </li>
                   </ul>
@@ -114,7 +114,7 @@ export default function Header() {
                             href='/works'
                             className='-mx-3 block px-4 py-2 text-center text-sm font-semibold leading-6 text-gray-900 hover:bg-gray-100'
                           >
-                            my works
+                            My works
                           </a>
                         </div>
                       </div>
