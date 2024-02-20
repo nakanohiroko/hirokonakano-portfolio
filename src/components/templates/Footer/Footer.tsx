@@ -26,10 +26,10 @@ export default function Footer() {
             <div>
               <p>
                 <span className='text-xs uppercase tracking-wider text-gray-500'>Contact me</span>
-
+                <br />
                 <a
                   href='mailto:hello@corleonis.net'
-                  className='block text-xl font-medium text-gray-900 underline-offset-4 hover:underline hover:opacity-75 sm:text-2xl'
+                  className='text-xl font-medium text-gray-900 underline-offset-4 hover:underline hover:opacity-75 sm:text-2xl'
                 >
                   hello@corleonis.net
                 </a>
