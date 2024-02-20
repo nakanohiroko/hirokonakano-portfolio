@@ -1,6 +1,6 @@
 import '../styles/globals.css';
 
-import React, { ReactNode } from 'react';
+import React, { ReactNode, Suspense } from 'react';
 
 import GoogleAnalytics from '../components/elements/GoogleAnalytics/GoogleAnalytics';
 import Footer from '../components/templates/Footer/Footer';
@@ -37,7 +37,9 @@ export default function Layout({ children }: Props) {
   return (
     <html lang='ja'>
       <head>
-        <GoogleAnalytics />
+        <Suspense fallback={<>Loading...</>}>
+          <GoogleAnalytics />
+        </Suspense>
       </head>
       <body>
         <Header />
