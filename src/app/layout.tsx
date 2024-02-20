@@ -37,7 +37,7 @@ export default function Layout({ children }: Props) {
   return (
     <html lang='ja'>
       <head>
-        <Suspense fallback={<>Loading...</>}>
+        <Suspense>
           <GoogleAnalytics />
         </Suspense>
       </head>

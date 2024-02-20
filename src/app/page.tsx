@@ -111,10 +111,12 @@ export default async function Page() {
             <div className='grid grid-cols-1 xl:h-screen xl:grid-cols-2'>
               <div className='relative z-10 xl:py-16'>
                 <div className='relative h-64 sm:h-80 xl:h-full'>
-                  <img
+                  <Image
+                    className='absolute inset-0 size-full object-cover'
                     alt='my picture'
                     src='/img_aboutme.jpg'
-                    className='absolute inset-0 size-full object-cover'
+                    width={768}
+                    height={1024}
                   />
                 </div>
               </div>
