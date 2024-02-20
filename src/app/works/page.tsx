@@ -28,9 +28,9 @@ export default async function Page() {
       <main className='mb-20 flex flex-col items-center justify-between px-6 pt-28 lg:px-16'>
         <section
           id='works'
-          className='p-6 lg:p-10'
+          className=''
         >
-          <h2 className='mb-16 text-4xl font-bold lg:text-5xl'>My works</h2>
+          <h2 className='mb-16 text-center text-4xl font-bold lg:text-5xl'>My works</h2>
           <ArticleList articles={data.contents} />
         </section>
       </main>
