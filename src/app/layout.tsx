@@ -2,6 +2,7 @@ import '../styles/globals.css';
 
 import React, { ReactNode } from 'react';
 
+import GoogleAnalytics from '../components/elements/GoogleAnalytics/GoogleAnalytics';
 import Footer from '../components/templates/Footer/Footer';
 import Header from '../components/templates/Header/Header';
 import { abrilfatface, inter, mulish, notojp } from '../styles/fonts';
@@ -35,6 +36,9 @@ interface Props {
 export default function Layout({ children }: Props) {
   return (
     <html lang='ja'>
+      <head>
+        <GoogleAnalytics />
+      </head>
       <body>
         <Header />
         <main
