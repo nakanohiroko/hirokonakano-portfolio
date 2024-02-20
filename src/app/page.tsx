@@ -151,15 +151,7 @@ export default async function Page() {
                     コロナ禍を経て2022年に山梨・八ヶ岳山麓へ拠点を移してからは、ワークライフバランスが取れ、日々の暮らしをより楽しむことができるようになりました。
                   </p>
                   <p className='mt-4'>
-                    趣味はゲームと散歩、取り柄は真面目で健康なこと。よく褒められるのはレスポンスの速さです。日々のことは
-                    <a
-                      href='https://daily.corleonis.net/'
-                      target='_blank'
-                      className='underline hover:no-underline'
-                    >
-                      こちら
-                    </a>
-                    。
+                    趣味はゲームと散歩、取り柄は真面目で健康なこと。よく褒められるのはレスポンスの速さです。
                   </p>
                   <hr className='mt-10' />
                   <p className='mt-10'>
