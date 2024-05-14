@@ -200,7 +200,7 @@ export default async function Page() {
                         alt={''}
                         className='size-4 fill-current'
                       />
-                      <h4 className='font-bold'>（株）教育同人社、教材リンクサイト実装</h4>
+                      <h4 className='font-bold'>教材リンクサイト実装</h4>
                     </div>
                     <p className='ml-7 '>
                       紙教材に印刷された二次元コードを読み取ると、解答と関連コンテンツへのリンクが表示される教材リンクサイトを実装（AWS
@@ -284,17 +284,7 @@ export default async function Page() {
                         alt={''}
                         className='size-4 fill-current'
                       />
-                      <h4 className='font-bold'>
-                        NHK eテレ{' '}
-                        <a
-                          href='https://www.nhk.or.jp/bitworld/index.html'
-                          target='_blank'
-                          className='underline hover:no-underline'
-                        >
-                          ビットワールド
-                        </a>{' '}
-                        番組連動アプリケーション開発
-                      </h4>
+                      <h4 className='font-bold'>テレビ番組連動アプリケーション開発</h4>
                     </div>
                     <p className='ml-7 '>
                       生放送時に番組と連動してリアルタイムで遊ぶことのできるゲームの開発（JavaScript）や、毎週番組から出されるお題に対して視聴者が投稿できるアプリケーション（Flash,
@@ -318,7 +308,7 @@ export default async function Page() {
                     <p className='ml-7 '>
                       2010年当時はFlash製アプリで、教科書紙面の閲覧、音声や動画の再生機能などを搭載
                       <br />
-                      その後、electronや出版社独自のビューアなどフォーマットを変えながら2022年まで（株）三省堂のデジタル教材制作に携わる（最終的にはVue.jsなどを使用）
+                      その後、electronや出版社独自のビューアなどフォーマットを変えながら2022年までデジタル教科書制作に携わる（最終的にはVue.jsなどを使用）
                     </p>
                   </li>
                   <li className='space-y-1'>
